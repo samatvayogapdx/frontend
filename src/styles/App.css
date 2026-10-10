@@ -1,0 +1,41 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-style {
+  display:block;
+}
+
+.sub-title {
+  width:100%;
+  font:arial;
+  font-size:50px;
+  text-align:center;
+  margin:40px 0px;
+}
+
+.container {
+  margin:0 100px;
+}
+
+.main-content {
+  padding-top: 125px;
+}
+
+.text-block {
+  font:arial;
+  font-size:22px;    /* padding:0px 200px; */
+  
+}
+
+.wrap-image-left{
+  float:left;
+  margin-right: 75px
+}
+
+.wrap-image-right{
+  float:right;
+  margin-left: 75px;
+}
