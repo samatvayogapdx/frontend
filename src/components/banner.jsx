@@ -20,18 +20,20 @@ export default function Banner(){
 
             </div>
             <div className='banner-menu'>
-                <NavLink
-                to="/"
-                className='nav-link'
-                >
-                    <div className='banner-menu-item'>Home</div>
-                </NavLink>  
+ 
 
                 <NavLink
                 to="/about"
                 className='nav-link'
                 >
-                    <div className='banner-menu-item'>About</div>
+                    <div className='banner-menu-item'>About The Teacher</div>
+                </NavLink>     
+
+                <NavLink
+                to="/about"
+                className='nav-link'
+                >
+                    <div className='banner-menu-item'>Class Information</div>
                 </NavLink>     
 
                 

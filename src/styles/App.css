@@ -2,6 +2,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:"gill-sans"
 }
 
 .page-style {
@@ -10,7 +11,7 @@ html, body, #root {
 
 .sub-title {
   width:100%;
-  font:arial;
+
   font-size:50px;
   text-align:center;
   margin:40px 0px;
@@ -25,7 +26,7 @@ html, body, #root {
 }
 
 .text-block {
-  font:arial;
+
   font-size:22px;    /* padding:0px 200px; */
   
 }
