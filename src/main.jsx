@@ -1,8 +1,15 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import HomePage from './Pages/home.jsx';
-import AboutPage from './Pages/about.jsx';
-import ClassSchedule from './Pages/class-schedule.jsx';
+
+import AboutPage from './Pages/About/about.jsx';
+import ClassInformation from './Pages/About/class-information.jsx';
+import AboutTeacher from './Pages/About/about-teacher.jsx';
+import ClassVenue from './Pages/About/class-venue.jsx';
+
+import ClassSchedule from './Pages/Schedule/class-schedule.jsx';
+
+
 import WhatAshtanga from './Pages/what-ashtanga.jsx';
 import NewToAshtanga from './Pages/new-to-ashtanga.jsx';
 import LoginPage from './Pages/admin/login.jsx';
@@ -21,7 +28,12 @@ ReactDOM.createRoot(root).render(
       
       <Route path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
+
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/class-information" element={<ClassInformation />} />
+      <Route path="/about-teacher" element={<AboutTeacher />} />
+      <Route path="/class-venue" element={<ClassVenue />} />      
+
       <Route path="/class-schedule" element={<ClassSchedule />} />
       <Route path="/ashtanga" element={<WhatAshtanga />} />
       <Route path="/new-to-ashtanga" element={<NewToAshtanga />} />

@@ -4,7 +4,7 @@ import MyButton from '../../components/widgets/my-button';
 import {REFRESH_TOKEN, ACCESS_TOKEN,USER_NAME} from '../../constants/user-admin';
 import {useNavigate} from 'react-router-dom';
 import AxiosInstance from  '../../utils/axios';
-import Banner from '../../components/banner';
+import Banner from '../../components/Banner/banner';
 
 
 export default function LoginPage ()

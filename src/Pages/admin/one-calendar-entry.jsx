@@ -7,8 +7,11 @@ export default function OneCalendarEntry({
 {
     return(
         <div className='one-entry-containter'>
-            <div className='one-entry-item'>{thisEntry.title}</div>
+            <div className='one-entry-item'>{thisEntry.text.map((oneLine)=>(
+                <div syle={{display:'flex'}}>{oneLine}</div>
+            ))}</div>
             <div className='one-entry-item'>{thisEntry.start_date}</div>
+            <div className='one-entry-item'>{thisEntry.type}</div>
             <MyButton
                 button_function={()=>deleteRecord(thisEntry.id)}
                 button_text='Delete'

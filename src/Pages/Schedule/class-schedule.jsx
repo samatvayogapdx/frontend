@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router';
-import Banner from '../components/banner';
-import '../styles/class-schedule.css';
+import Banner from '../../components/Banner/banner';
+import '../../styles/class-schedule.css';
 import {useState, useEffect} from 'react';
-import AxiosInstance from '../utils/axios';
-import {weekDays} from '../constants/all-date-info';
+import AxiosInstance from '../../utils/axios';
+import {weekDays} from '../../constants/all-date-info';
 
 export default function ClassSchedule()
 {
@@ -23,6 +23,7 @@ export default function ClassSchedule()
         try{
             console.log(thisDate)
             const response = await AxiosInstance.get(`calendar/get-calendar-days/${thisDate['month']}/${thisDate['year']}/`);
+            console.log(response.data)
             setAllDaysThisMonth(response.data['these_days']);
         }catch(err){
             console.log(err)
@@ -112,10 +113,27 @@ export default function ClassSchedule()
                                     <li
                                         className='one-day'
                                         key={index}
+                                        style={{backgroundColor:oneDay.bgColor}}
                                     >
                                         <div style={{display:'block'}}>
                                             <div className='one-day-text'>{oneDay.day}</div>
-                                            <div className='day-title' style={{color:oneDay.color}}>{oneDay.title}</div>
+                                            {(oneDay.link==='')?
+                                                <div className='day-title' style={{color:oneDay.color}}>
+                                                    {oneDay.text.map((oneLine)=>(
+                                                            <div>{oneLine}</div>
+                                                        ))}
+                                                </div>
+                                                :
+                                                <a href={oneDay.link} target="_blank">
+                                                    <div className='day-title' style={{color:oneDay.color}}>
+                                                        {oneDay.text.map((oneLine)=>(
+                                                            <div>{oneLine}</div>                                                        
+                                                        ))}
+                                                    </div>
+                                                </a>
+                                            }
+                                            
+                                            
                                         </div>
                                     </li>
                                 ))}

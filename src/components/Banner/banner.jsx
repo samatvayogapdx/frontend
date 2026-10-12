@@ -1,9 +1,61 @@
-import {WEBSITE_URL} from '../constants/website-constants';
-import { NavLink, Link } from "react-router";
+import {WEBSITE_URL} from '../../constants/website-constants';
+
 import {useNavigate} from 'react-router-dom';
+import OneMenu from './one-menu';
 
 export default function Banner(){
-    const navigate=useNavigate();     
+    const navigate=useNavigate();    
+    
+    const aboutMenu=[
+        {
+        title:'Your Teacher',
+        link:'/about-teacher'
+        },
+        {
+        title:'Class Information',
+        link:'/class-information'
+        },   
+        {
+        title:'Class Venue',
+        link:'/class-venue'
+        },                 
+    ]   
+    
+    const gettomgStartedMenu=[
+        {
+        title:'Intake Form',
+        link:'/intake-form'
+        },
+        {
+        title:'Information Sheet',
+        link:'/information sheet'
+        },   
+        {
+        title:'Waiver',
+        link:'/waiver'
+        },
+        {
+        title:'Schedule Meet And Greet',
+        link:'/schedule-meet-and-greet'
+        },        
+    ]
+    
+    
+    const scheduleMenu=[
+        {
+        title:'Class Schedule',
+        link:'/class-schedule'
+        },    
+        {
+        title:'Moon Days',
+        link:'/moon-days'
+        },    
+        {
+        title:'Annual Schedule',
+        link:'/annual-schedule'
+        }
+    ]
+
     return(
         <div className='banner-main'>
             <div 
@@ -20,7 +72,19 @@ export default function Banner(){
 
             </div>
             <div className='banner-menu'>
-                <NavLink
+                <OneMenu
+                    menuName='About'
+                    menuList={aboutMenu}
+                />        
+                <OneMenu
+                    menuName='Getting Started'
+                    menuList={gettomgStartedMenu}
+                />    
+                <OneMenu
+                    menuName='Schedule'
+                    menuList={scheduleMenu}
+                />                                           
+                {/* <NavLink
                 to="/"
                 className='nav-link'
                 >
@@ -59,7 +123,7 @@ export default function Banner(){
                     className='nav-link'
                  >
                     <div className='banner-menu-item'>New To Ashtanga</div>
-                </NavLink>                       
+                </NavLink>                        */}
                 
             </div>
             

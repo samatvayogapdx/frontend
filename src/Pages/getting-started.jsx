@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import Banner from '../components/banner';
+import Banner from '../components/Banner/banner';
 
 export default function GettingStarted(){
     return (

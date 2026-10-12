@@ -1,7 +1,14 @@
+@import url('https://googleapis.com');
+
 html, body, #root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.sanskrit {
+  font-family:'noto sans';
 }
 
 .page-style {
