@@ -78,7 +78,7 @@ export default function Banner(){
                 >
 
                     <img 
-                        src='/images/Logo.png'
+                        src='/images/logo.png'
                         width='170px'
                         height='123px'/>
 
