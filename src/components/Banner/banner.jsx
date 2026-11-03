@@ -79,40 +79,12 @@ export default function Banner(){
 
                     <img 
                         src='src/images/Logo.png'
-                        width='110px'
-                        height='80px'/>
+                        width='170px'
+                        height='123px'/>
 
 
                 </div>
-                <div className='home-link'>
-                    <a href='https://www.instagram.com/samatvayogapdx?cplk=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr'>
-
-                        <img 
-                            src='src/images/instagram.jpg'
-                            width='50px'
-                            height='50px'/>            
-                    </a>
-                </div>
-
-                <div className='home-link'>
-                    <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61567526107166&sk=about'>
-
-                        <img 
-                            src='src/images/facebook.png'
-                            width='65px'
-                            height='50px'/>            
-                    </a>
-                </div>     
-
-                <div className='home-link'>
-                    <a href='https://www.linkedin.com/in/samatva-yoga-12ab7a445 '>
-
-                        <img 
-                            src='src/images/linked-in.png'
-                            width='65px'
-                            height='50px'/>            
-                    </a>
-                </div>                                
+                              
 
             </div>
             <div className='banner-menu'>
@@ -132,47 +104,38 @@ export default function Banner(){
                     menuName='Schedule'
                     menuList={scheduleMenu}
                 />                                           
-                {/* <NavLink
-                to="/"
-                className='nav-link'
-                >
-                    <div className='banner-menu-item'>Home</div>
-                </NavLink>  
+        
+            </div>
+            <div className='sub-banner'>
+                <div className='image-link'>
+                    <a href='https://www.instagram.com/samatvayogapdx?cplk=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr'>
 
-                <NavLink
-                to="/about"
-                className='nav-link'
-                >
-                    <div className='banner-menu-item'>About</div>
-                </NavLink>     
+                        <img 
+                            src='src/images/instagram.jpg'
+                            width='25px'
+                            height='25px'/>            
+                    </a>
+                </div>
 
-                
-                <NavLink
-                    to="/class-schedule"
-                    className='nav-link'
-                 >
-                    <div className='banner-menu-item'>Class Schedule</div>
-                </NavLink>       
-                
-                <NavLink
-                    to="/getting-started"
-                    className='nav-link'
-                 >
-                    <div className='banner-menu-item'>Getting Started</div>
-                </NavLink>                   
-                <NavLink
-                    to="/ashtanga"
-                    className='nav-link'
-                 >
-                    <div className='banner-menu-item'>What Is Ashtanga</div>
-                </NavLink>                       
-                <NavLink
-                    to="/new-to-ashtanga"
-                    className='nav-link'
-                 >
-                    <div className='banner-menu-item'>New To Ashtanga</div>
-                </NavLink>                        */}
-                
+                <div className='image-link'>
+                    <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61567526107166&sk=about'>
+
+                        <img 
+                            src='src/images/facebook.png'
+                            width='30px'
+                            height='25px'/>                  
+                    </a>
+                </div>     
+
+                <div className='image-link'>
+                    <a href='https://www.linkedin.com/in/samatva-yoga-12ab7a445 '>
+
+                        <img 
+                            src='src/images/linked-in.png'
+                            width='25px'
+                            height='25px'/>                 
+                    </a>
+                </div>  
             </div>
             
         </div>

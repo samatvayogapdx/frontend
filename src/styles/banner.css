@@ -1,25 +1,38 @@
 .banner-main {
-  background-color:#3a5dbd;
-  height:150px;
+  background-color:#dff137;
+  height:125px;
   width:100%;
   display:flex;
   justify-content:space-between;
   position:fixed;
 }
 
+.sub-banner{
+  background-color:#a1b305;
+  height:25px;
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  position:fixed;  
+  top:125px;
+}
 .links-div {
 
   display: flex;
   justify-content: flex-start;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width:30%
 }
 
+.image-link{
+  margin-right:1%;
+
+}
 .home-link {
     /* width:15%;
     height:fit-content;
     margin:1% 5%; */
-    margin:0 3%;
+    margin:0;
     font:arial;
     font-size:30px;
     /* display:block; */
