@@ -7,11 +7,13 @@ import AxiosInstance from '../../utils/axios';
 import OneCalendarEntry from './one-calendar-entry';
 import RepeatingEntry from './repeating-entry';
 import InputDiv from './inputs';
+import MyButton from '../../components/widgets/my-button';
+import {useNavigate} from 'react-router-dom';
 
 export default function Admin ()
 {
 
-
+    const navigate=useNavigate();   
     const [currentRepeatingEntry, setCurrentRepeatingEntry]=useState({
         type:'Repeating',
         start_date:'2000-01-01',
@@ -98,6 +100,10 @@ export default function Admin ()
                             </div>
                         ))}
                 </div>
+                <MyButton
+                    button_text='Batch Moon Days Upload'
+                    button_function={()=>navigate('/batch-moon-days')}
+                />
             </div>
 
         </div>

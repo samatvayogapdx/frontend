@@ -83,7 +83,9 @@ export default function InputDiv({
 
         if (oneType==='Moon Day') {
             dataToSend.line_one='Moon Day'
-            dataToSend.color='gray'
+            dataToSend.color='white'
+            dataToSend.bg_color='gray'
+            dataToSend.link='https::/www.samatvayogapdx.com/moon-days'
         } else if (oneType==='Canceled'){
             dataToSend.line_one='Canceled'
             dataToSend.color='red'

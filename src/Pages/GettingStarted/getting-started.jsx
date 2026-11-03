@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import Banner from '../components/Banner/banner';
+import Banner from '../../components/Banner/banner';
 
 export default function GettingStarted(){
     return (
@@ -10,7 +10,7 @@ export default function GettingStarted(){
 
                 <div className='container'>
                     <div className='text-block'>
-                        <img src='src/images/yoga pose.png' className='wrap-image-left' width='315px' height='350px'/>
+                        <img src='src/images/deepa-wheel.jpg' className='wrap-image-left' width='315px' height='350px'/>
                         <p style={{fontSize:'40px'}}>Beginning Your Yoga Practice</p>
                         <p>
                             If you are new to my classes, I ask that you begin with a **30-minute introductory meeting** before joining a regular class. 
@@ -32,7 +32,8 @@ export default function GettingStarted(){
                         </p>
                         <p>
                             Your first step is simply to schedule your 30-minute introductory meeting. I look forward to meeting you and beginning 
-                            this practice together.  Please email me at ***** to get started
+                            this practice together.  Please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> a time for an introductory 
+                            visit.
                         </p>
                     </div>
                 </div>

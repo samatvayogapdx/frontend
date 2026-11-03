@@ -9,7 +9,7 @@ export default function HomePage(){
                     <div className='sub-title '>New To Ashtanga</div>
 
                     <div className='container'>
-                        <img src='src/images/lotus pose.png' className='wrap-image-right' width='475x' height='450px'/>
+                        <img src='src/images/head-stand.jpg' className='wrap-image-right' width='400x' height='450px'/>
                         <div className='text-block'>
                             
                             <p>

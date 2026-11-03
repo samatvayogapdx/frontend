@@ -21,9 +21,9 @@ export default function ClassSchedule()
     }
     const getCalendar = async ()=>{
         try{
-            console.log(thisDate)
+
             const response = await AxiosInstance.get(`calendar/get-calendar-days/${thisDate['month']}/${thisDate['year']}/`);
-            console.log(response.data)
+
             setAllDaysThisMonth(response.data['these_days']);
         }catch(err){
             console.log(err)

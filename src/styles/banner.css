@@ -7,13 +7,22 @@
   position:fixed;
 }
 
+.links-div {
+
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  width:30%
+}
+
 .home-link {
-    width:15%;
+    /* width:15%;
     height:fit-content;
-    margin:1% 5%;
+    margin:1% 5%; */
+    margin:0 3%;
     font:arial;
     font-size:30px;
-    display:block;
+    /* display:block; */
     color:black;
     /* border:1px solid black; */
     

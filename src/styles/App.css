@@ -23,12 +23,50 @@ html, body, #root {
   margin:40px 0px;
 }
 
+.one-year {
+  width:100%;
+  font:arial;
+  font-size:20px;
+  text-align:center;
+  margin:10px 0px;
+}
+
+.all-moon-days{
+  overflow-y: scroll;
+  max-height:440px;
+  width:30%;
+  margin:auto;
+}
+
+.moon-day-year{
+  display: flex;
+  justify-content: space-evenly;
+  width:30%;
+  font-size: 30px;
+  margin:auto;
+}
+
 .container {
   margin:0 100px;
 }
 
+.container-bigger-font {
+  margin:0 150px;
+  font-size: 20px;
+}
+
+.intake-form{
+  display:block;
+  width:50%;
+  margin:auto;
+  font-size: 20px;
+}
+
 .main-content {
   padding-top: 125px;
+  background-image: url('src/images/background.jpg');
+  min-height: 100vh;
+  background-size: cover;
 }
 
 .text-block {
@@ -45,4 +83,30 @@ html, body, #root {
 .wrap-image-right{
   float:right;
   margin-left: 75px;
+}
+
+
+.annual-schedule-year{
+  display: flex;
+  justify-content: space-evenly;
+  width:30%;
+  font-size: 30px;
+  margin:50px auto;
+}
+
+.annual-schedule-grid{
+  display:block;
+  width:40%;
+  margin:auto;
+
+  font-size: 30px;
+}
+
+.annual-schedule-one-line{
+  display:flex;
+  justify-content: space-around;
+}
+
+.annual-schedule-one-line-half{
+  width:35%;
 }

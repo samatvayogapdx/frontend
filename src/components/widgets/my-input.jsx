@@ -17,20 +17,21 @@ export default function MyInput({
 
     return (
         <div
-            className={(inputStyle===undefined) ? 'my_input' : ''}
+            className='my_input'
             style={{
                 ...inputStyle
             }}
             >
                 
             {(labelText==='')?<></>:
-                <label style={labelStyle}>{labelText}</label>            
+                <label htmlFor={inputName} style={labelStyle}>{labelText}</label>            
             }
 
             <input
                 key={inputKey}
                 style={(inputFieldStyle===undefined)?{width:'30%'}:inputFieldStyle}
                 disabled={disable}
+                id={inputName} 
                 ref={fileInputRef}
                 name={inputName}
                 onChange={handleChange}  

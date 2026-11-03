@@ -16,10 +16,29 @@ export default function Banner(){
         link:'/class-information'
         },   
         {
+        title:'Class Types',
+        link:'/class-types'
+        },           
+        {
         title:'Class Venue',
         link:'/class-venue'
         },                 
     ]   
+
+    const yogaMenu=[
+        {
+        title:'Ashtanga Yoga',
+        link:'/ashtanga'
+        }, 
+        {
+        title:'New to Ashtanga',
+        link:'/new-to-ashtanga'
+        },         
+        {
+        title:'Primary Series',
+        link:'/our-sequence'
+        },                   
+    ]
     
     const gettomgStartedMenu=[
         {
@@ -27,17 +46,10 @@ export default function Banner(){
         link:'/intake-form'
         },
         {
-        title:'Information Sheet',
-        link:'/information sheet'
+        title:'Getting Started',
+        link:'/getting-started'
         },   
-        {
-        title:'Waiver',
-        link:'/waiver'
-        },
-        {
-        title:'Schedule Meet And Greet',
-        link:'/schedule-meet-and-greet'
-        },        
+   
     ]
     
     
@@ -58,17 +70,49 @@ export default function Banner(){
 
     return(
         <div className='banner-main'>
-            <div 
-                style={{cursor:'pointer'}}
-                onClick={()=>navigate('/')}
-                className='home-link'
-            >
+            <div className='links-div'>
+                <div 
+                    style={{cursor:'pointer'}}
+                    onClick={()=>navigate('/')}
+                    className='home-link'
+                >
 
-                <img 
-                    src='src/images/logo.png'
-                    width='50px'
-                    height='50px'/>
-                <div>Deepa's Ashtanga Yoga</div>
+                    <img 
+                        src='src/images/Logo.png'
+                        width='110px'
+                        height='80px'/>
+
+
+                </div>
+                <div className='home-link'>
+                    <a href='https://www.instagram.com/samatvayogapdx?cplk=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr'>
+
+                        <img 
+                            src='src/images/instagram.jpg'
+                            width='50px'
+                            height='50px'/>            
+                    </a>
+                </div>
+
+                <div className='home-link'>
+                    <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61567526107166&sk=about'>
+
+                        <img 
+                            src='src/images/facebook.png'
+                            width='65px'
+                            height='50px'/>            
+                    </a>
+                </div>     
+
+                <div className='home-link'>
+                    <a href='https://www.linkedin.com/in/samatva-yoga-12ab7a445 '>
+
+                        <img 
+                            src='src/images/linked-in.png'
+                            width='65px'
+                            height='50px'/>            
+                    </a>
+                </div>                                
 
             </div>
             <div className='banner-menu'>
@@ -79,7 +123,11 @@ export default function Banner(){
                 <OneMenu
                     menuName='Getting Started'
                     menuList={gettomgStartedMenu}
-                />    
+                /> 
+                <OneMenu
+                    menuName='Yoga'
+                    menuList={yogaMenu}
+                />                    
                 <OneMenu
                     menuName='Schedule'
                     menuList={scheduleMenu}
