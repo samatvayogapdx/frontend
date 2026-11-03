@@ -65,7 +65,7 @@ html, body, #root {
 
 .main-content {
   padding-top: 125px;
-  background-image: url('public/images/background.jpg');
+  background-image: url('/images/background.jpg');
   min-height: 100vh;
   background-size: cover;
 }

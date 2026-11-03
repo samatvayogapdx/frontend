@@ -69,7 +69,7 @@ export default function ClassSchedule()
                                 onClick={()=>changeMonth(-1)}
                             >
                                 <img 
-                                    src='public/images/left-cheveron.png'
+                                    src='/images/left-cheveron.png'
                                     width='50px'
                                     height='50px'/>
                             </div>
@@ -85,7 +85,7 @@ export default function ClassSchedule()
                                 onClick={()=>changeMonth(1)}
                             >
                                 <img 
-                                    src='public/images/right-cheveron.png'
+                                    src='/images/right-cheveron.png'
                                     width='50px'
                                     height='50px'/>                        
                             </div>                        
