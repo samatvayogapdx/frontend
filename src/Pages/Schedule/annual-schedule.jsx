@@ -59,7 +59,7 @@ export default function AnnualSchedule(){
                             onClick={()=>changeYear(-1)}
                         >
                             <img 
-                                src='src/images/left-cheveron.png'
+                                src='public/images/left-cheveron.png'
                                 width='50px'
                                 height='50px'/>                        
                         </div>                    
@@ -71,7 +71,7 @@ export default function AnnualSchedule(){
                             onClick={()=>changeYear(1)}
                         >
                             <img 
-                                src='src/images/right-cheveron.png'
+                                src='public/images/right-cheveron.png'
                                 width='50px'
                                 height='50px'/>                        
                         </div>                        

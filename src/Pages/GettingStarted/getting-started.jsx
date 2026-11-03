@@ -10,7 +10,7 @@ export default function GettingStarted(){
 
                 <div className='container'>
                     <div className='text-block'>
-                        <img src='src/images/deepa-wheel.jpg' className='wrap-image-left' width='315px' height='350px'/>
+                        <img src='public/images/deepa-wheel.jpg' className='wrap-image-left' width='315px' height='350px'/>
                         <p style={{fontSize:'40px'}}>Beginning Your Yoga Practice</p>
                         <p>
                             If you are new to my classes, I ask that you begin with a **30-minute introductory meeting** before joining a regular class. 

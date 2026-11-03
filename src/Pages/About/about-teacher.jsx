@@ -9,7 +9,7 @@ export default function AboutTeacher(){
                 <div className='sub-title '>About Deepa</div>
 
                 <div className='container'>
-                    <img src='src/images/deepa.jpg' className='wrap-image-right' width='475x' height='400px'/>
+                    <img src='public/images/deepa.jpg' className='wrap-image-right' width='475x' height='400px'/>
                     <div className='text-block'>
                         <p>
                             I was born into and raised in a family and culture rooted in yogic practices in India. Although I didn’t fully understand it 

@@ -8,7 +8,7 @@ export default function ClassVenue(){
             <div className='main-content'>
                 <div className='sub-title '>The Ecotrust Building: A Landmark of Sustainability</div>
                     <div className='container'>
-                        <img src='src/images/ECO-trust.jpg' className='wrap-image-right' width='475x' height='375px'/>
+                        <img src='public/images/ECO-trust.jpg' className='wrap-image-right' width='475x' height='375px'/>
                         <div className='text-block'>
                             <p>
                                 The Ecotrust Building, officially known as the Jean Vollum Natural Capital Center, is a landmark of sustainable 

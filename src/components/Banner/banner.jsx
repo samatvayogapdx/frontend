@@ -78,7 +78,7 @@ export default function Banner(){
                 >
 
                     <img 
-                        src='src/images/Logo.png'
+                        src='public/images/Logo.png'
                         width='170px'
                         height='123px'/>
 
@@ -111,7 +111,7 @@ export default function Banner(){
                     <a href='https://www.instagram.com/samatvayogapdx?cplk=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr'>
 
                         <img 
-                            src='src/images/instagram.jpg'
+                            src='public/images/instagram.jpg'
                             width='25px'
                             height='25px'/>            
                     </a>
@@ -121,7 +121,7 @@ export default function Banner(){
                     <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61567526107166&sk=about'>
 
                         <img 
-                            src='src/images/facebook.png'
+                            src='public/images/facebook.png'
                             width='30px'
                             height='25px'/>                  
                     </a>
@@ -131,7 +131,7 @@ export default function Banner(){
                     <a href='https://www.linkedin.com/in/samatva-yoga-12ab7a445 '>
 
                         <img 
-                            src='src/images/linked-in.png'
+                            src='public/images/linked-in.png'
                             width='25px'
                             height='25px'/>                 
                     </a>

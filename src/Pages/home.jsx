@@ -8,7 +8,7 @@ export default function HomePage(){
                 <div className='main-content'>
                     <div className='sub-title '>Welcome to Samatva Yoga</div>
                     <div style={{margin:'auto', width:'100%', display:'flex', justifyContent:'center'}}>
-                        <img src='src/images/home-page-image.jpg' width='475x' height='450px'/>
+                        <img src='public/images/home-page-image.jpg' width='475x' height='450px'/>
                     </div>
                     
                 </div>

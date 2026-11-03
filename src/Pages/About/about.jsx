@@ -11,7 +11,7 @@ export default function AboutPage(){
                 <div className='container'>
                     <div className='text-block'>
                         <p style={{fontSize:'40px'}}>A Meditative Ashtanga-Inspired Yoga Practice</p>
-                        <img src='src/images/cairn.png' className='wrap-image-right' width='475x' height='450px'/>
+                        <img src='public/images/cairn.png' className='wrap-image-right' width='475x' height='450px'/>
                         <p>
                             This class offers a steady, intentional approach to yoga inspired by the traditional Ashtanga method, with an emphasis 
                             on breath, presence, and moving inward. Rather than focusing on a fast-paced flow or constantly changing sequences, we 
