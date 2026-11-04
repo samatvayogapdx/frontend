@@ -1,8 +1,8 @@
-import {API_URL} from '../constants/website-constants';
+//import {API_URL} from '../constants/website-constants';
 import axios from 'axios';
 
 const AxiosInstance = axios.create({
-    baseURL:API_URL,
+    baseURL:import.meta.env.VITE_API_URL,
     headers: {
         "Content-Type": "application/json",
         accept: "application/json"

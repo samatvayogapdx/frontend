@@ -13,6 +13,7 @@ export default function LoginPage ()
     const [userName, setUserName]=useState('');
     const [password, setPassword]=useState('');
     const handleFormSubmit =async  ()=>{
+        console.log(import.meta.env.VITE_API_URL)
         let usernameToSend=userName.toLowerCase();
         //console.log(usernameToSend)
        // console.log(password)
