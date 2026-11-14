@@ -1,23 +1,25 @@
 .banner-main {
-  background-color:#dff137;
-  height:125px;
+  height:15vh;
   width:100%;
-  display:flex;
-  justify-content:space-between;
-  position:fixed;
+  display:block;
+}
+
+.top-banner{
+  width:100%;
+  height:75%;
+  background-color:#dff137;
 }
 
 .sub-banner{
   background-color:#a1b305;
-  height:25px;
+  height:25%;
   width:100%;
   display:flex;
-  justify-content:flex-start;
-  position:fixed;  
-  top:125px;
+  justify-content:flex-end;
 }
-.links-div {
 
+.links-div {
+  height:100%;
   display: flex;
   justify-content: flex-start;
   /* padding-top: 20px; */

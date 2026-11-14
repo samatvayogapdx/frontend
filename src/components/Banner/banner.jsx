@@ -70,50 +70,53 @@ export default function Banner(){
 
     return(
         <div className='banner-main'>
-            <div className='links-div'>
-                <div 
-                    style={{cursor:'pointer'}}
-                    onClick={()=>navigate('/')}
-                    className='home-link'
-                >
+            <div className='top-banner'>
+                <div className='links-div'>
+                    <div 
+                        style={{cursor:'pointer'}}
+                        onClick={()=>navigate('/')}
+                        className='home-link'
+                    >
 
-                    <img 
-                        src='/images/logo.png'
-                        width='170px'
-                        height='123px'/>
+                        <img 
+                            src='/images/logo.png'
+                            width='150vw'
+                            height='100%'/>
 
+
+                    </div>
+                                
 
                 </div>
-                              
+                <div className='banner-menu'>
+                    <OneMenu
+                        menuName='About'
+                        menuList={aboutMenu}
+                    />        
+                    <OneMenu
+                        menuName='Getting Started'
+                        menuList={gettomgStartedMenu}
+                    /> 
+                    <OneMenu
+                        menuName='Yoga'
+                        menuList={yogaMenu}
+                    />                    
+                    <OneMenu
+                        menuName='Schedule'
+                        menuList={scheduleMenu}
+                    />                                           
+            
+                </div>
+            </div>
 
-            </div>
-            <div className='banner-menu'>
-                <OneMenu
-                    menuName='About'
-                    menuList={aboutMenu}
-                />        
-                <OneMenu
-                    menuName='Getting Started'
-                    menuList={gettomgStartedMenu}
-                /> 
-                <OneMenu
-                    menuName='Yoga'
-                    menuList={yogaMenu}
-                />                    
-                <OneMenu
-                    menuName='Schedule'
-                    menuList={scheduleMenu}
-                />                                           
-        
-            </div>
             <div className='sub-banner'>
                 <div className='image-link'>
                     <a href='https://www.instagram.com/samatvayogapdx?cplk=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr'>
 
                         <img 
                             src='/images/instagram.jpg'
-                            width='25px'
-                            height='25px'/>            
+                            width='30vw'
+                            height='100%'/>            
                     </a>
                 </div>
 
@@ -122,8 +125,8 @@ export default function Banner(){
 
                         <img 
                             src='/images/facebook.png'
-                            width='30px'
-                            height='25px'/>                  
+                            width='30vw'
+                            height='100%'/>                  
                     </a>
                 </div>     
 
@@ -132,8 +135,8 @@ export default function Banner(){
 
                         <img 
                             src='/images/linked-in.png'
-                            width='25px'
-                            height='25px'/>                 
+                            width='30vw'
+                            height='100%'/>                 
                     </a>
                 </div>  
             </div>

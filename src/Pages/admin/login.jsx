@@ -15,10 +15,15 @@ export default function LoginPage ()
     const handleFormSubmit =async  ()=>{
         console.log(import.meta.env.VITE_API_URL)
         let usernameToSend=userName.toLowerCase();
+        let formData={
+            username:usernameToSend,
+            password:password
+        }
+        console.log(formData)
         //console.log(usernameToSend)
        // console.log(password)
         try{
-            const response=await AxiosInstance.post("accounts/token/", {username:usernameToSend, password:password});
+            const response=await AxiosInstance.post("accounts/token/", formData);
             console.log(response)
             localStorage.setItem(ACCESS_TOKEN, response.data.access);
             localStorage.setItem(REFRESH_TOKEN, response.data.refresh);         

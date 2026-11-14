@@ -65,7 +65,7 @@ html, body, #root {
 
 .main-content {
   padding-top: 125px;
-  background-image: url('/images/background.jpg');
+  background-image: url('https://res.cloudinary.com/sdsre79p/image/upload/v1794667517/background.jpg');
   min-height: 100vh;
   background-size: cover;
 }
