@@ -7,6 +7,8 @@
 .top-banner{
   width:100%;
   height:75%;
+  display:flex;
+  justify-content: space-between;
   background-color:#dff137;
 }
 
@@ -23,7 +25,16 @@
   display: flex;
   justify-content: flex-start;
   /* padding-top: 20px; */
+
   width:30%
+}
+
+.banner-menu{
+    display:flex;
+    justify-content:space-evenly;
+    margin:0 10vw;
+    width:50%;
+    /* margin:3% 10%; */
 }
 
 .image-link{
@@ -53,12 +64,7 @@
     color:white;
 }
 
-.banner-menu{
-    display:flex;
-    justify-content:space-evenly;
 
-    margin:3% 10%;
-}
 
 .banner-menu-item{
     width:fit-content;
@@ -82,12 +88,13 @@
   position: relative;
   display: inline-block;
   margin:0 10px;
+  align-self: flex-end;
 }
 
 .menu-trigger {
   background-color: transparent;
   color: black;
-  padding: 10px 20px;
+  padding: 0px 20px;
   border: none;
   cursor: pointer;
   font-size: 20px;

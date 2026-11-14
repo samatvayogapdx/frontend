@@ -8,7 +8,7 @@ export default function HomePage(){
                 <div className='main-content'>
                     <div className='sub-title '>Welcome to Samatva Yoga</div>
                     <div style={{margin:'auto', width:'100%', display:'flex', justifyContent:'center'}}>
-                        <img src='https://res.cloudinary.com/sdsre79p/image/upload/f_auto,q_auto/home-page-image' width='475x' height='450px'/>
+                        {/* <img src='https://res.cloudinary.com/sdsre79p/image/upload/f_auto,q_auto/home-page-image' width='475x' height='450px'/> */}
                     </div>
                     
                 </div>

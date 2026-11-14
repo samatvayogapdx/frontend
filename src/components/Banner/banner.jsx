@@ -82,8 +82,6 @@ export default function Banner(){
                             src='/images/logo.png'
                             width='150vw'
                             height='100%'/>
-
-
                     </div>
                                 
 
@@ -115,7 +113,7 @@ export default function Banner(){
 
                         <img 
                             src='/images/instagram.jpg'
-                            width='30vw'
+                            width='35vw'
                             height='100%'/>            
                     </a>
                 </div>
@@ -125,7 +123,7 @@ export default function Banner(){
 
                         <img 
                             src='/images/facebook.png'
-                            width='30vw'
+                            width='35vw'
                             height='100%'/>                  
                     </a>
                 </div>     
@@ -135,7 +133,7 @@ export default function Banner(){
 
                         <img 
                             src='/images/linked-in.png'
-                            width='30vw'
+                            width='35vw'
                             height='100%'/>                 
                     </a>
                 </div>  
