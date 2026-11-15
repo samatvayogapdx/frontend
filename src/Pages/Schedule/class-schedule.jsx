@@ -141,7 +141,7 @@ export default function ClassSchedule()
 
 
                         </div>           
-                        <button onClick={test}>test</button>
+                        {/* <button onClick={test}>test</button> */}
                     </div> 
             <Outlet />
         </div>
