@@ -5,9 +5,11 @@ import Banner from '../../components/Banner/banner';
 import {useState} from 'react';
 import AxiosInstance from '../../utils/axios';
 import {useNavigate} from 'react-router-dom';
+import {useIsMobile} from '../../utils/is-mobile.jsx';
 
 export default function IntakeForm(){
 
+    const isMobile = useIsMobile();   
     const navigate=useNavigate(); 
     const [firstName, setFirstName]=useState('');
     const [lastName, setLastName]=useState('');
@@ -55,56 +57,112 @@ export default function IntakeForm(){
     return (
         <div >
             <Banner/>
-            <div className='main-content'>
-                <div className='sub-title '>Intake Form</div>
-                <div className='intake-form'>
-                    <p>If you're intersted in taking my class I would love to hear from you.  Please fill out the form below 
-                        and schedule a time for me to visit with you for an introductory session.  After sinding me your information
-                        please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an introductory visit.</p>
-                    <MyInput
-                        labelText='First Name'
-                        handleChange={e=>setFirstName(e.target.value)}
-                        inputValue={firstName}
-                        inputName='FirstName'
-                        inputStyle={{fontSize:'20px'}}
-                    />
-                    <MyInput
-                        labelText='Last Name'
-                        handleChange={e=>setLastName(e.target.value)}
-                        inputValue={lastName}
-                        inputName='LastName'
-                        inputStyle={{fontSize:'20px'}}
-                    />
-                    <MyInput
-                        labelText='Email'
-                        handleChange={e=>setEmail(e.target.value)}
-                        inputValue={email}
-                        inputName='Email'
-                        inputStyle={{fontSize:'20px'}}
-                    /> 
-                    <MyInput
-                        labelText='Phone'
-                        handleChange={e=>setPhone(e.target.value)}
-                        inputValue={phone}
-                        inputName='Phone'
-                        inputStyle={{fontSize:'20px'}}
-                    />     
-                    <MyTextarea
-                        labelText='A little about yourself'
-                        handleChange={e=>setPersonalInfo(e.target.value)}
-                        inputValue={personalInfo}
-                        inputName='About'
-                        rows='5'
-                        columns='15'
-                        inputStyle={{fontSize:'20px'}}
-                    />                                                                             
-                    <MyButton
-                        button_function={sendIntakeForm}
-                        button_text='Submit Form'
-                    />
-                    <a href='src/Pages/GettingStarted/Waiver.pdf' target='_blank'>Class Waiver</a>
+            {(!isMobile) ?            
+                <div className='main-content'>
+                    <div className='sub-title '>Intake Form</div>
+                    <div className='intake-form'>
+                        <p>If you're intersted in taking my class I would love to hear from you.  Please fill out the form below 
+                            and schedule a time for me to visit with you for an introductory session.  After sinding me your information
+                            please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an introductory visit.</p>
+                        <MyInput
+                            labelText='First Name'
+                            handleChange={e=>setFirstName(e.target.value)}
+                            inputValue={firstName}
+                            inputName='FirstName'
+                            inputStyle={{fontSize:'20px'}}
+                        />
+                        <MyInput
+                            labelText='Last Name'
+                            handleChange={e=>setLastName(e.target.value)}
+                            inputValue={lastName}
+                            inputName='LastName'
+                            inputStyle={{fontSize:'20px'}}
+                        />
+                        <MyInput
+                            labelText='Email'
+                            handleChange={e=>setEmail(e.target.value)}
+                            inputValue={email}
+                            inputName='Email'
+                            inputStyle={{fontSize:'20px'}}
+                        /> 
+                        <MyInput
+                            labelText='Phone'
+                            handleChange={e=>setPhone(e.target.value)}
+                            inputValue={phone}
+                            inputName='Phone'
+                            inputStyle={{fontSize:'20px'}}
+                        />     
+                        <MyTextarea
+                            labelText='A little about yourself'
+                            handleChange={e=>setPersonalInfo(e.target.value)}
+                            inputValue={personalInfo}
+                            inputName='About'
+                            rows='5'
+                            columns='15'
+                            inputStyle={{fontSize:'20px'}}
+                        />                                                                             
+                        <MyButton
+                            button_function={sendIntakeForm}
+                            button_text='Submit Form'
+                        />
+                        <a href='src/Pages/GettingStarted/Waiver.pdf' target='_blank'>Class Waiver</a>
+                    </div>
                 </div>
-            </div>
+            :
+                <div  className='main-content-mobile'>
+                    <div className='sub-title '>Intake Form</div>
+                        <div className='mobile-container'>
+                            <div className='mobile-text-block'>
+                                <p>If you're intersted in taking my class I would love to hear from you.  Please fill out the form below 
+                                and schedule a time for me to visit with you for an introductory session.  After sinding me your information
+                                please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an introductory visit.
+                            </p>
+                                <MyInput
+                                    labelText='First Name'
+                                    handleChange={e=>setFirstName(e.target.value)}
+                                    inputValue={firstName}
+                                    inputName='FirstName'
+                                    inputStyle={{fontSize:'20px'}}
+                                />  
+                                <MyInput
+                                    labelText='Last Name'
+                                    handleChange={e=>setLastName(e.target.value)}
+                                    inputValue={lastName}
+                                    inputName='LastName'
+                                    inputStyle={{fontSize:'20px'}}
+                                />
+                                <MyInput
+                                    labelText='Email'
+                                    handleChange={e=>setEmail(e.target.value)}
+                                    inputValue={email}
+                                    inputName='Email'
+                                    inputStyle={{fontSize:'20px'}}
+                                /> 
+                                <MyInput
+                                    labelText='Phone'
+                                    handleChange={e=>setPhone(e.target.value)}
+                                    inputValue={phone}
+                                    inputName='Phone'
+                                    inputStyle={{fontSize:'20px'}}
+                                />     
+                                <MyTextarea
+                                    labelText='A little about yourself'
+                                    handleChange={e=>setPersonalInfo(e.target.value)}
+                                    inputValue={personalInfo}
+                                    inputName='About'
+                                    rows='5'
+                                    columns='15'
+                                    inputStyle={{fontSize:'20px'}}
+                                />                                                                             
+                                <MyButton
+                                    button_function={sendIntakeForm}
+                                    button_text='Submit Form'
+                                />             
+                                <a href='src/Pages/GettingStarted/Waiver.pdf' target='_blank'>Class Waiver</a>                                     
+                            </div>
+                        </div>
+                </div>
+            }
         </div>
     )
 }

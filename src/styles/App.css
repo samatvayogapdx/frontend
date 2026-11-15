@@ -86,6 +86,24 @@ html, body, #root {
   margin-left: 75px;
 }
 
+.main-content-mobile{
+  padding-top:5vh;
+  background-image: url('https://res.cloudinary.com/sdsre79p/image/upload/v1794667517/background.jpg');
+  background-size: cover;
+
+}
+.mobile-image{
+  margin:auto;
+}
+
+.mobile-text-block{
+  font-size:22px;
+  margin:0 5vw;
+}
+
+.mobile-container{
+  width:100%
+}
 
 .annual-schedule-year{
   display: flex;
