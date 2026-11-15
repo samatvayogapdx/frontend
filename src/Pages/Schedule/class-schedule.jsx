@@ -4,9 +4,12 @@ import '../../styles/class-schedule.css';
 import {useState, useEffect} from 'react';
 import AxiosInstance from '../../utils/axios';
 import {weekDays} from '../../constants/all-date-info';
+import {useIsMobile} from '../../utils/is-mobile.jsx';
+
 
 export default function ClassSchedule()
 {
+    const isMobile = useIsMobile();    
     const [allDaysThisMonth, setAllDaysThisMonth]=useState([]);
     
     const [thisDate, setThisDate]=useState({
@@ -59,9 +62,10 @@ export default function ClassSchedule()
     return (
         <div style={{margin:0, padding:0}}>
             <Banner/>
-                <div className='main-content'>
-                    <div className='sub-title '>Class Schedule</div>
-                    <div className='top-row'>
+                {(!isMobile)?
+                    <div className='main-content'>
+                        <div className='sub-title '>Class Schedule</div>
+                        <div className='top-row'>
                             <div
                                 style={{
                                     cursor:'pointer'
@@ -141,9 +145,87 @@ export default function ClassSchedule()
 
 
                         </div>           
-                        {/* <button onClick={test}>test</button> */}
+                            {/* <button onClick={test}>test</button> */}
                     </div> 
-            <Outlet />
+                :
+                <div  className='main-content-mobile'>
+                    <div className='sub-title '>Class Schedule</div>
+                    <div className='top-row-mobile'>
+                            <div
+                                style={{
+                                    cursor:'pointer'
+                                }}
+                                onClick={()=>changeMonth(-1)}
+                            >
+                                <img 
+                                    src='/images/left-cheveron.png'
+                                    width='50px'
+                                    height='50px'/>
+                            </div>
+                            <div 
+                                className='date-div'
+                            >
+                                {`${thisDate.thisMonthStr}, ${thisDate.year}`}
+                            </div>
+                            <div
+                                style={{
+                                    cursor:'pointer'
+                                }}
+                                onClick={()=>changeMonth(1)}
+                            >
+                                <img 
+                                    src='/images/right-cheveron.png'
+                                    width='50px'
+                                    height='50px'/>                        
+                            </div>    
+                    </div>
+                    <div className='calendar-box-mobile'>
+                        <div className='days-labels'>
+                            {weekDays.map((oneDay)=>(
+                                <div key={oneDay}>{oneDay.slice(0,3)}</div>
+                            ))}   
+                        </div>
+
+                        
+                            <ol className='all-days-box'>
+                                {allDaysThisMonth.map((oneDay, index)=>(
+                                    (oneDay.day<0)?
+                                    <li 
+                                        key={oneDay.day}
+                                        className='no-day-box'>
+                                        
+                                    </li>:
+                                    <li
+                                        className='one-day'
+                                        key={index}
+                                        style={{backgroundColor:oneDay.bgColor}}
+                                    >
+                                        <div style={{display:'block'}}>
+                                            <div className='one-day-text'>{oneDay.day}</div>
+                                            {(oneDay.link==='')?
+                                                <div className='day-title' style={{color:oneDay.color}}>
+                                                    {oneDay.text.map((oneLine)=>(
+                                                            <div>{oneLine}</div>
+                                                        ))}
+                                                </div>
+                                                :
+                                                <a href={oneDay.link} target="_blank">
+                                                    <div className='day-title' style={{color:oneDay.color}}>
+                                                        {oneDay.text.map((oneLine)=>(
+                                                            <div>{oneLine}</div>                                                        
+                                                        ))}
+                                                    </div>
+                                                </a>
+                                            }
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                ))}
+                            </ol>                           
+                    </div>
+                </div>
+            }
         </div>
     )
 }
