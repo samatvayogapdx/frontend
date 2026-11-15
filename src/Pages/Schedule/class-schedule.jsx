@@ -33,17 +33,17 @@ export default function ClassSchedule()
         }
     }
 
-    useEffect(()=>{
-        let today=new Date();
-        setThisDate({
-            month:today.getMonth()+1,
-            year:today.getFullYear(),
-            thisDate:today,
-            thisMonthStr:today.toLocaleString('default',{month:'long'})
-        })
+    // useEffect(()=>{
+    //     // let today=new Date();
+    //     // setThisDate({
+    //     //     month:today.getMonth()+1,
+    //     //     year:today.getFullYear(),
+    //     //     thisDate:today,
+    //     //     thisMonthStr:today.toLocaleString('default',{month:'long'})
+    //     // })
 
-        getCalendar();
-    },[])
+    //     getCalendar();
+    // },[])
     
     useEffect(()=>{getCalendar();},[thisDate])
 
