@@ -14,7 +14,7 @@ export default function AboutTeacher(){
                     <div className='sub-title '>About Deepa</div>
 
                     <div className='container'>
-                        <img src='https:res.cloudinary.com/sdsre79p/image/upload/v1794667085/deepa.jpg' className='wrap-image-right' width='475x' height='400px'/>
+                        <img src='https://res.cloudinary.com/sdsre79p/image/upload/v1794667085/deepa.jpg' className='wrap-image-right' width='475x' height='400px'/>
                         <div className='text-block'>
                             <p>
                                 I was born into and raised in a family and culture rooted in yogic practices in India. Although I didn’t fully understand it 
@@ -51,7 +51,7 @@ export default function AboutTeacher(){
                                     display:'flex',
                                     justifyContent:'center'
                                 }}>
-                                    <img src='https:res.cloudinary.com/sdsre79p/image/upload/v1794667085/deepa.jpg' className='mobile-image' width='150vw' height='150vh'/>
+                                    <img src='https://res.cloudinary.com/sdsre79p/image/upload/v1794667085/deepa.jpg' className='mobile-image' width='150vw' height='150vh'/>
                             </div>
                             <div className='mobile-text-block'>
                                 <p>
@@ -83,3 +83,4 @@ export default function AboutTeacher(){
         </div>
     )
 }
+
