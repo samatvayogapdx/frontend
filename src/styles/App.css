@@ -32,21 +32,6 @@ html, body, #root {
   margin:10px 0px;
 }
 
-.all-moon-days{
-  overflow-y: scroll;
-  max-height:440px;
-  width:30%;
-  margin:auto;
-}
-
-.moon-day-year{
-  display: flex;
-  justify-content: space-evenly;
-  width:30%;
-  font-size: 30px;
-  margin:auto;
-}
-
 .container {
   margin:0 100px;
 }
@@ -105,27 +90,3 @@ html, body, #root {
   width:100%
 }
 
-.annual-schedule-year{
-  display: flex;
-  justify-content: space-evenly;
-  width:30%;
-  font-size: 30px;
-  margin:50px auto;
-}
-
-.annual-schedule-grid{
-  display:block;
-  width:40%;
-  margin:auto;
-
-  font-size: 30px;
-}
-
-.annual-schedule-one-line{
-  display:flex;
-  justify-content: space-around;
-}
-
-.annual-schedule-one-line-half{
-  width:35%;
-}

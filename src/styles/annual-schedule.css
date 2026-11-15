@@ -1,0 +1,53 @@
+.annual-schedule-year{
+  display: flex;
+  justify-content: space-evenly;
+  width:30%;
+  font-size: 30px;
+  margin:50px auto;
+}
+
+.annual-schedule-year-mobile{
+  display: flex;
+  justify-content: space-evenly;
+  width:80%;
+  font-size: 30px;
+  margin:50px auto;
+}
+
+.annual-schedule-grid{
+  display:block;
+  width:40%;
+  margin:auto;
+
+  font-size: 30px;
+}
+
+.annual-schedule-grid-mobile{
+  display:block;
+  width:80%;
+  margin:auto;
+  font-size: 30px;
+  height:80vh;  
+}
+.annual-schedule-one-line{
+  display:flex;
+  justify-content: space-around;
+}
+
+.annual-schedule-one-line-mobile{
+  display:flex;
+  justify-content: space-around;
+
+}    
+
+.annual-schedule-one-line-season-mobile{
+  width:35%;
+}
+
+.annual-schedule-one-line-dates-mobile{
+  width:60%;
+}
+
+.annual-schedule-one-line-half{
+  width:35%;
+}

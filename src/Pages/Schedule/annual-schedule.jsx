@@ -1,8 +1,10 @@
 import Banner from '../../components/Banner/banner';
 import {useEffect, useState} from 'react';
+import {useIsMobile} from '../../utils/is-mobile.jsx';
+import '../../styles/annual-schedule.css';
 
 export default function AnnualSchedule(){
-
+    const isMobile = useIsMobile(); 
     const [year, setYear]=useState(new Date().getFullYear()); 
     const [breakSchedule, setBreakSchedule]=useState({
         Spring:'-',
@@ -49,6 +51,7 @@ export default function AnnualSchedule(){
     return (
         <div style={{margin:0, padding:0}}>
             <Banner/>
+            {(!isMobile)?
                 <div className='main-content'>
                     <div className='sub-title '>Planned Breaks</div> 
                     <div className='annual-schedule-year'>
@@ -97,7 +100,59 @@ export default function AnnualSchedule(){
                         </div>                                                                        
 
                     </div>
-                </div>            
+                </div>
+                :
+                <div  className='main-content-mobile'>
+                    <div className='sub-title '>Planned Breaks</div>
+                    <div className='mobile-container'>
+                        <div className='annual-schedule-year-mobile'>
+                            <div
+                                style={{
+                                    cursor:'pointer'
+                                }}
+                                onClick={()=>changeYear(-1)}
+                            >
+                                <img 
+                                    src='/images/left-cheveron.png'
+                                    width='50px'
+                                    height='50px'/>                        
+                            </div>                    
+                            <div>{year}</div>
+                            <div
+                                style={{
+                                    cursor:'pointer'
+                                }}
+                                onClick={()=>changeYear(1)}
+                            >
+                                <img 
+                                    src='/images/right-cheveron.png'
+                                    width='50px'
+                                    height='50px'/>                        
+                            </div>                        
+                            
+                        </div>
+                        <div className='annual-schedule-grid-mobile'>
+                            <div className='annual-schedule-one-line-mobile'>
+                                <div className='annual-schedule-one-line-season-mobile'>Spring</div>
+                                <div className='annual-schedule-one-line-dates-mobile'>{breakSchedule['Spring']}  </div>
+                            </div>
+                            <div className='annual-schedule-one-line-mobile'>
+                                <div className='annual-schedule-one-line-season-mobile'>Summer</div>
+                                <div className='annual-schedule-one-line-dates-mobile'>{breakSchedule['Summer']}</div>
+                            </div>     
+                            <div className='annual-schedule-one-line-mobile'>
+                                <div className='annual-schedule-one-line-season-mobile'>Fall</div>
+                                <div className='annual-schedule-one-line-dates-mobile'>{breakSchedule['Fall']}</div>
+                            </div>     
+                            <div className='annual-schedule-one-line-mobile'>
+                                <div className='annual-schedule-one-line-season-mobile'>Winter</div>
+                                <div className='annual-schedule-one-line-dates-mobile'>{breakSchedule['Winter']}</div>
+                            </div>                                                                        
+
+                        </div>                        
+                    </div>
+                </div>
+            }
             
 
             

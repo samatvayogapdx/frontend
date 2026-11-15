@@ -1,0 +1,30 @@
+
+.all-moon-days{
+  overflow-y: scroll;
+  max-height:440px;
+  width:30%;
+  margin:auto;
+}
+
+.moon-day-year{
+  display: flex;
+  justify-content: space-evenly;
+  width:30%;
+  font-size: 30px;
+  margin:auto;
+}
+
+.moon-day-year-mobile{
+  display: flex;
+  justify-content: space-evenly;
+  width:50%;
+  font-size: 30px;
+  margin:auto;   
+}
+
+.all-moon-days-mobile{
+  overflow-y: scroll;
+  height:50vh;
+  width:30%;
+  margin:auto;    
+}

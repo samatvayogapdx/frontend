@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router';
+
 import Banner from '../../components/Banner/banner';
 import '../../styles/class-schedule.css';
 import {useState, useEffect} from 'react';
