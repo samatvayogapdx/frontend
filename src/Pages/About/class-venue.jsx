@@ -52,7 +52,7 @@ export default function ClassVenue(){
                                 display:'flex',
                                 justifyContent:'center'
                             }}>
-                                <img src='https:res.cloudinary.com/sdsre79p/image/upload/v1794667085/ECO-trust.jpg' className='mobile-image' width='150vw' height='150vh'/>
+                                <img src='https://res.cloudinary.com/sdsre79p/image/upload/v1794667243/ECO-trust.jpg' className='mobile-image' width='150vw' height='150vh'/>
                         </div>
                         <div className='mobile-text-block'>   
                                 <p>
