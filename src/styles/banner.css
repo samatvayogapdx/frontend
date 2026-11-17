@@ -1,12 +1,12 @@
 .banner-main {
-  height:15vh;
+  height:115px;
   width:100%;
   display:block;
 }
 
 .top-banner{
   width:100%;
-  height:75%;
+  height:100%;
   display:flex;
   justify-content: space-between;
   background-color:#dff137;

@@ -2,6 +2,9 @@ import Banner from '../../components/Banner/banner';
 import {useEffect, useState} from 'react';
 import {useIsMobile} from '../../utils/is-mobile.jsx';
 import '../../styles/annual-schedule.css';
+import BottomBanner from '../../components/bottom-banner/bottom-banner.jsx';
+
+
 
 export default function AnnualSchedule(){
     const isMobile = useIsMobile(); 
@@ -100,6 +103,7 @@ export default function AnnualSchedule(){
                         </div>                                                                        
 
                     </div>
+                    <BottomBanner/>   
                 </div>
                 :
                 <div  className='main-content-mobile'>
@@ -151,6 +155,7 @@ export default function AnnualSchedule(){
 
                         </div>                        
                     </div>
+                    <BottomBanner/>   
                 </div>
             }
             

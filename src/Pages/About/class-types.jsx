@@ -1,6 +1,7 @@
 
 import Banner from '../../components/Banner/banner';
 import {useIsMobile} from '../../utils/is-mobile.jsx';
+import BottomBanner from "../../components/bottom-banner/bottom-banner";
 
 export default function ClassTypes(){
 
@@ -39,7 +40,7 @@ export default function ClassTypes(){
                         </p>
 
                     </div>                
-                        
+                    <BottomBanner/>   
                 </div>
             :
                 <div className='main-content-mobile'>
@@ -71,7 +72,7 @@ export default function ClassTypes(){
                         </p>
 
                     </div>                
-                        
+                    <BottomBanner/>   
                 </div>
             }            
         </div>

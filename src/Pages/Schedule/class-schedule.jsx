@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 import AxiosInstance from '../../utils/axios';
 import {weekDays} from '../../constants/all-date-info';
 import {useIsMobile} from '../../utils/is-mobile.jsx';
-
+import BottomBanner from '../../components/bottom-banner/bottom-banner.jsx';
 
 export default function ClassSchedule()
 {
@@ -146,7 +146,8 @@ export default function ClassSchedule()
                                 </ol>                        
 
 
-                            </div>           
+                            </div>     
+                            <BottomBanner/>        
                                 {/* <button onClick={test}>test</button> */}
                         </div> 
                         :
@@ -179,7 +180,8 @@ export default function ClassSchedule()
                                             src='/images/right-cheveron.png'
                                             width='50px'
                                             height='50px'/>                        
-                                    </div>    
+                                    </div>
+                                      
                             </div>
                             <div className='calendar-box-mobile'>
                                 <div className='days-labels'>
@@ -226,7 +228,9 @@ export default function ClassSchedule()
                                         ))}
                                     </ol>                           
                             </div>
+                            <BottomBanner/> 
                         </div>
+                         
                     }
                 </>}
                 

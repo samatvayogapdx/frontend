@@ -35,7 +35,7 @@ ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
       
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<ClassInformation />} />
       <Route path="/login" element={<LoginPage />} />
 
       <Route path="/about" element={<AboutPage />} />
@@ -56,8 +56,10 @@ ReactDOM.createRoot(root).render(
       <Route path="/new-to-ashtanga" element={<NewToAshtanga />} />
       <Route path="/our-sequence" element={<OurSequence />} />      
 
-      <Route path="/getting-started" element={<GettingStarted />} />
-      <Route path="/intake-form" element={<IntakeForm />} />
+      <Route path="/getting-started" element={<IntakeForm />} />
+
+      {/* <Route path="/getting-started" element={<GettingStarted />} />
+      <Route path="/intake-form" element={<IntakeForm />} /> */}
       <Route path="/form-sent" element={<FormSent />} />
       
       

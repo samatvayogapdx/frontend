@@ -50,32 +50,32 @@ export default function Banner(){
         title:'Class Types',
         link:'/class-types'
         },           
-        {
-        title:'Class Venue',
-        link:'/class-venue'
-        },                 
+        // {
+        // title:'Class Venue',
+        // link:'/class-venue'
+        // },                 
     ]   
 
-    const yogaMenu=[
-        {
-        title:'Ashtanga Yoga',
-        link:'/ashtanga'
-        }, 
-        {
-        title:'New to Ashtanga',
-        link:'/new-to-ashtanga'
-        },         
-        {
-        title:'Primary Series',
-        link:'/our-sequence'
-        },                   
-    ]
+    // const yogaMenu=[
+    //     {
+    //     title:'Ashtanga Yoga',
+    //     link:'/ashtanga'
+    //     }, 
+    //     {
+    //     title:'New to Ashtanga',
+    //     link:'/new-to-ashtanga'
+    //     },         
+    //     {
+    //     title:'Primary Series',
+    //     link:'/our-sequence'
+    //     },                   
+    // ]
     
-    const gettomgStartedMenu=[
-        {
-        title:'Intake Form',
-        link:'/intake-form'
-        },
+    const gettingStartedMenu=[
+        // {
+        // title:'Intake Form',
+        // link:'/intake-form'
+        // },
         {
         title:'Getting Started',
         link:'/getting-started'
@@ -94,7 +94,7 @@ export default function Banner(){
         link:'/moon-days'
         },    
         {
-        title:'Annual Schedule',
+        title:'Annual Breaks',
         link:'/annual-schedule'
         }
     ]
@@ -108,16 +108,16 @@ export default function Banner(){
         {
             name:'starting',
             label:'+ Getting Started',
-            links:gettomgStartedMenu
+            links:gettingStartedMenu
         },   
-        {
-            name:'yoga',
-            label:'+ Yoga',
-            links:yogaMenu
-        },              
+        // {
+        //     name:'yoga',
+        //     label:'+ Yoga',
+        //     links:yogaMenu
+        // },              
         {
             name:'schedule',
-            label:'+ Schedule',
+            label:'+ Class Schedule',
             links:scheduleMenu
         },   
     ]
@@ -126,7 +126,7 @@ export default function Banner(){
         <>
             {(!isMobile)?
             <div className='banner-main'>
-                <div className='top-banner'>
+            <div className='top-banner'>
                     <div className='links-div'>
                         <div 
                             style={{cursor:'pointer'}}
@@ -144,56 +144,28 @@ export default function Banner(){
                     </div>
                     <div className='banner-menu'>
                         <OneMenu
-                            menuName='About'
+                            menuName='Home'
                             menuList={aboutMenu}
-                        />        
-                        <OneMenu
+                        />    
+                        <div className="menu-container">
+                            <a href='/getting-started'  className='menu-trigger' style={{textDecoration: 'none'}}>Getting Started</a> 
+                        </div>   
+                        {/* <OneMenu
                             menuName='Getting Started'
                             menuList={gettomgStartedMenu}
-                        /> 
-                        <OneMenu
+                        />  */}
+                        {/* <OneMenu
                             menuName='Yoga'
                             menuList={yogaMenu}
-                        />                    
+                        />                     */}
                         <OneMenu
-                            menuName='Schedule'
+                            menuName='Class Schedule'
                             menuList={scheduleMenu}
                         />                                           
                 
                     </div>
                 </div>
 
-                <div className='sub-banner'>
-                    <div className='image-link'>
-                        <a href='https://www.instagram.com/samatvayogapdx?cplk=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr'>
-
-                            <img 
-                                src='/images/instagram.jpg'
-                                width='35vw'
-                                height='100%'/>            
-                        </a>
-                    </div>
-
-                    <div className='image-link'>
-                        <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61567526107166&sk=about'>
-
-                            <img 
-                                src='/images/facebook.png'
-                                width='35vw'
-                                height='100%'/>                  
-                        </a>
-                    </div>     
-
-                    <div className='image-link'>
-                        <a href='https://www.linkedin.com/in/samatva-yoga-12ab7a445 '>
-
-                            <img 
-                                src='/images/linked-in.png'
-                                width='35vw'
-                                height='100%'/>                 
-                        </a>
-                    </div>  
-                </div>
             </div>
         :
             <div className='mobile-title-bar'>

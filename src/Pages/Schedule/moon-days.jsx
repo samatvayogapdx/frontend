@@ -3,6 +3,8 @@ import Banner from '../../components/Banner/banner';
 import AxiosInstance from '../../utils/axios';
 import {useIsMobile} from '../../utils/is-mobile.jsx';
 import '../../styles/moon-day.css';
+import BottomBanner from '../../components/bottom-banner/bottom-banner.jsx';
+
 
 export default function MoonDays(){
     const isMobile = useIsMobile();  
@@ -69,7 +71,7 @@ export default function MoonDays(){
                             <div className='one-year'>{oneMoonDay.start_date}</div>
                         ))}
                     </div>
-
+                    <BottomBanner/> 
                 </div>
             :
                 <div  className='main-content-mobile'>
@@ -102,7 +104,8 @@ export default function MoonDays(){
                         {moonDaysThisYear.map((oneMoonDay)=>(
                             <div className='one-year'>{oneMoonDay.start_date}</div>
                         ))}
-                    </div>                                     
+                    </div>    
+                    <BottomBanner/>                                  
                 </div>
         }
         </div>

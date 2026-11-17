@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Banner from '../../components/Banner/banner';
+import BottomBanner from '../../components/bottom-banner/bottom-banner.jsx';
 import {useIsMobile} from '../../utils/is-mobile.jsx';
 
 export default function AboutTeacher(){
@@ -40,7 +41,7 @@ export default function AboutTeacher(){
                             </p>
                         </div>
                     </div>
-
+                    <BottomBanner/>
                 </div>
             :
                 <div  className='main-content-mobile'>
@@ -77,6 +78,7 @@ export default function AboutTeacher(){
                              </p>                                
                             </div>
                         </div>
+                        <BottomBanner/>  
                 </div>
                       
             }

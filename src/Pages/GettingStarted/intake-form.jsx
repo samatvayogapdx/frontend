@@ -6,6 +6,8 @@ import {useState} from 'react';
 import AxiosInstance from '../../utils/axios';
 import {useNavigate} from 'react-router-dom';
 import {useIsMobile} from '../../utils/is-mobile.jsx';
+import BottomBanner from '../../components/bottom-banner/bottom-banner.jsx';
+
 
 export default function IntakeForm(){
 
@@ -60,10 +62,19 @@ export default function IntakeForm(){
             {(!isMobile) ?            
                 <div className='main-content'>
                     <div className='sub-title '>Intake Form</div>
+
+                    <div className='container'>
+                        <div className='text-block'>
+                            <div className='centered-text'  style={{fontSize:'35px'}}>Welcome to Samatva Yoga! </div>
+                             <div className='centered-text'>
+                                If you are new student interested in practicing with us, please fill out and submit the intake form below, 
+                                then schedule an introductory meeting with the teacher.  During this meeting you can introduce yourself and 
+                                get to know the teacher. You will receive additional information about the classes. This would also be a great opportunity for you to get your questions answered!                                
+                            </div>
+                        </div>
+                    </div>
                     <div className='intake-form'>
-                        <p>If you're intersted in taking my class I would love to hear from you.  Please fill out the form below 
-                            and schedule a time for me to visit with you for an introductory session.  After sinding me your information
-                            please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an introductory visit.</p>
+
                         <MyInput
                             labelText='First Name'
                             handleChange={e=>setFirstName(e.target.value)}
@@ -105,18 +116,33 @@ export default function IntakeForm(){
                             button_function={sendIntakeForm}
                             button_text='Submit Form'
                         />
+                        <div className='centered-text'>
+                            Please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an 
+                            introductory visit.
+                        </div>
                         <a href='src/Pages/GettingStarted/Waiver.pdf' target='_blank'>Class Waiver</a>
+                    <div style={{
+                        display:'block',
+                        marginTop:'1%'}}
+                    >
+                        <div>About / Pricing:</div>
+                        <div>$59.00 monthly membership - all classes</div>
+                        <div>$599.00 annual membership - all classes</div>
+                    </div>                               
                     </div>
+                    <BottomBanner/>   
                 </div>
             :
                 <div  className='main-content-mobile'>
                     <div className='sub-title '>Intake Form</div>
                         <div className='mobile-container'>
                             <div className='mobile-text-block'>
-                                <p>If you're intersted in taking my class I would love to hear from you.  Please fill out the form below 
-                                and schedule a time for me to visit with you for an introductory session.  After sinding me your information
-                                please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an introductory visit.
-                            </p>
+                                <div className='centered-text'  style={{fontSize:'35px'}}>Welcome to Samatva Yoga! </div>
+                                <div className='centered-text'>
+                                    If you are new student interested in practicing with us, please fill out and submit the intake form below, 
+                                    then schedule an introductory meeting with the teacher.  During this meeting you can introduce yourself and 
+                                    get to know the teacher. You will receive additional information about the classes. This would also be a great opportunity for you to get your questions answered!                                
+                                </div>                                
                                 <MyInput
                                     labelText='First Name'
                                     handleChange={e=>setFirstName(e.target.value)}
@@ -157,10 +183,23 @@ export default function IntakeForm(){
                                 <MyButton
                                     button_function={sendIntakeForm}
                                     button_text='Submit Form'
-                                />             
-                                <a href='src/Pages/GettingStarted/Waiver.pdf' target='_blank'>Class Waiver</a>                                     
+                                />       
+                                <div className='centered-text'>
+                                    Please <a href='https://calendar.app.google/iJjJDKeoaQDnsteG6' target='_blank'>schedule</a> with me a time when we can have an 
+                                    introductory visit.
+                                </div>                                      
+                                <a href='src/Pages/GettingStarted/Waiver.pdf' target='_blank'>Class Waiver</a>      
+                                <div style={{
+                                    display:'block',
+                                    marginTop:'1%'}}
+                                >
+                                    <div>About / Pricing:</div>
+                                    <div>$59.00 monthly membership - all classes</div>
+                                    <div>$599.00 annual membership - all classes</div>
+                                </div>                                                               
                             </div>
                         </div>
+                        <BottomBanner/>   
                 </div>
             }
         </div>
