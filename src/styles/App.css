@@ -41,7 +41,7 @@ html, body, #root {
 
 .container {
   margin:0 100px;
-  height:500px;
+  height:750px;
 }
 
 .container-bigger-font {
@@ -59,7 +59,7 @@ html, body, #root {
 .main-content {
   padding-top: 125px;
   background-image: url('https://res.cloudinary.com/sdsre79p/image/upload/v1794667517/background.jpg');
-  min-height: 100vh;
+  min-height: 150vh;
   background-size: cover;
 }
 
